@@ -1,16 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Lato&family=Lobster&family=Noto+Sans+Linear+B&family=Noto+Sans+Pau+Cin+Hau&family=Noto+Serif+Telugu:wght@900&family=Open+Sans:wght@300&family=Orbitron:wght@500&family=Oswald:wght@200&display=swap');
+
 .App {
   text-align: center;
+  overflow-x: hidden;
+}
+:root{
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cover-btn{
+  border: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: .5rem 2rem;
+  width: 200px;
+  border-radius: 5px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .App-header {
@@ -22,17 +32,127 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url('/public/people-collage-design.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
 }
-
+.header{
+  background-color: #282c34;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  color: white;
+}
+.header .logo{
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.search{
+  border:none;
+  background-color: transparent;
+  width:100%;
+  outline: none;
+  color:wheat;
+}
+.search-wrapper{
+  background-color: #5e647096;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width:30%;
+}
+.logout-btn{
+  background-color: wheat;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.App-header .cover-heading{
+  font-family: 'Lobster', cursive;
+}
 .App-link {
   color: #61dafb;
 }
+label{
+  width: 100%;
+  min-height: 84vh;
+  outline:2px dashed navajowhite;
+  display: block;
+}
+.images .image-wrapper{
+  width:300px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 4px;
+  border:2px solid black;
+  border:2px solid black;
+  animation-name: placeholder;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.image-holder{
+  width:300px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 4px;
+  border:2px solid black;
+  animation-name: placeholder;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 2rem;
+}
 
+@keyframes placeholder {
+  from{
+    background-color: #eee;
+  }
+  to{
+    background-color: #ccc;
+  }
+}
+.images .image-wrapper img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+button{
+  cursor: pointer;
+}
+.highlight{
+outline:3px solid turquoise;
+}
+@media (max-width:1013px) {
+  .images{
+    justify-content: center;
+  }
+}
+@media (max-width:440px) {
+  :root{
+    font-size: 12px;
+  }
+  .search-wrapper{
+    display: none;
   }
 }
