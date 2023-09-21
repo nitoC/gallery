@@ -28,4 +28,4 @@ Auth0 was integrated and used for authentication.
 firebase was used to store uploaded images
 
 ## Deployment 
-[https://peoplegallery.netlify.app](https://peoplegallery.netlify.app/)https://peoplegallery.netlify.app/
+(https://peoplegallery.netlify.app/)https://peoplegallery.netlify.app/
