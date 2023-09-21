@@ -27,5 +27,10 @@ Auth0 was integrated and used for authentication.
 ## Storage
 firebase was used to store uploaded images
 
+## Features
+- drag and drop
+- image reordering by dragging
+- search images by file name
+
 ## Deployment 
 https://peoplegallery.netlify.app/
