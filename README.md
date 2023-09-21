@@ -28,7 +28,7 @@ Auth0 was integrated and used for authentication.
 firebase was used to store uploaded images
 
 ## Features
-- drag and drop
+- drag and drop images from your local computer to save and display in the gallery.
 - image reordering by dragging
 - search images by file name
 
